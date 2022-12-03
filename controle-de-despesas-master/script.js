@@ -6,7 +6,6 @@ const form = document.querySelector("#form");
 const inputTransactionName = document.querySelector("#text");
 const inputTransactionAmount = document.querySelector("#amount");
 
-
 const localStorageTransactions = JSON.parse(localStorage
   .getItem("transactions"));
 let transactions = localStorage
@@ -103,7 +102,5 @@ const handleFormSubmit = event => {
     init();
     updateLocalStorage();
     cleanInputs();
-    
 }
-
 form.addEventListener("submit", handleFormSubmit)
